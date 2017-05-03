@@ -9,8 +9,9 @@
 import UIKit
 import TGCameraViewController
 import ChatSDKCore
+import MBProgressHUD
 
-class BSnapViewController: UIViewController, TGCameraDelegate {
+class BTakeSnapViewController: UIViewController, TGCameraDelegate {
     
     @IBOutlet weak var photoView: UIImageView!
     @IBOutlet weak var snapView: UIView!
@@ -40,7 +41,6 @@ class BSnapViewController: UIViewController, TGCameraDelegate {
     func updateUI () {
         sendButton.isHidden = photoView.image == nil
         deleteButton.isHidden = photoView.image == nil
-        
         snapView.isHidden = photoView.image != nil
         photoView.isHidden = photoView.image == nil
     }
@@ -69,20 +69,34 @@ class BSnapViewController: UIViewController, TGCameraDelegate {
     }
     
     @IBAction func send(_ sender: Any) {
-        // Show the user picker view
+        // Show the user picker view - this will allow us to send the snap to our contacts
         let friendsListViewController = BInterfaceManager.shared().a.friendsViewControllerWithUsers(toExclude: []);
-        friendsListViewController?.maximumSelectedUsers = 1
-        friendsListViewController?.rightBarButtonActionTitle = "Send"
         
+        // Set the action button to Send
+        friendsListViewController?.rightBarButtonActionTitle = "Send"
+
+        // Implement the block - this will be called when the user selectes the users and clicks send
         friendsListViewController?.usersToInvite = ({(users: [Any]?, groupName: String?) -> Void in
-            _ = BSnapHandler.shared.sendSnap(image: self.photoView.image!, users: users as! [PUser])
+            
+            // When we're about to send the message show a processing indicator
+            let hud = MBProgressHUD.showAdded(to: self.view, animated: true)
+            hud.label.text = "Sending"
+            
+            // Send the snap to the users
+            _ = BSnapHandler.shared.sendSnap(image: self.photoView.image!, users: users as! [PUser]).promiseKitThen().then {(result: Any?) in
+                
+                // When it has sent, hide the hud and dismiss the view
+                hud.hide(animated: true)
+                self.dismiss(animated: true, completion: nil)
+                
+                return AnyPromise.promiseWithValue(result)
+            }
         })
         
+        // Show the friends view controller
         let navController = UINavigationController.init(rootViewController: friendsListViewController!)
         self.present(navController, animated: true, completion: nil)
     }
-    
-    
     
     @IBAction func snapButtonPressed(_ sender: Any) {
         let navigationController = TGCameraNavigationController.new(with: self)

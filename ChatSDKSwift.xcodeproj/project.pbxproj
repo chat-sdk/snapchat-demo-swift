@@ -9,6 +9,17 @@
 /* Begin PBXBuildFile section */
 		AC11A8821D5B128400EBFDFD /* BTwitterHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AC11A8801D5B128400EBFDFD /* BTwitterHelper.m */; };
 		AC11A8831D5B128400EBFDFD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC11A8811D5B128400EBFDFD /* GoogleService-Info.plist */; };
+		AC60C5D81EA724F7001E83BA /* icn_60_snap@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC60C5D71EA724F7001E83BA /* icn_60_snap@3x.png */; };
+		AC60C5DA1EA7262A001E83BA /* icn_30_snap@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC60C5D91EA7262A001E83BA /* icn_30_snap@3x.png */; };
+		AC60C5DC1EA754EA001E83BA /* BSnapHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC60C5DB1EA754EA001E83BA /* BSnapHandler.swift */; };
+		AC60C5DE1EA75501001E83BA /* BFirebaseQueueHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC60C5DD1EA75501001E83BA /* BFirebaseQueueHandler.swift */; };
+		AC60C5E01EA75DAF001E83BA /* BSnap.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC60C5DF1EA75DAF001E83BA /* BSnap.swift */; };
+		AC60C5EE1EA893CF001E83BA /* BSnapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC60C5ED1EA893CF001E83BA /* BSnapsViewController.swift */; };
+		AC60C5F01EA894D9001E83BA /* BSnapsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC60C5EF1EA894D9001E83BA /* BSnapsViewController.xib */; };
+		AC60C5F81EA9D5E6001E83BA /* BSnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC60C5F71EA9D5E6001E83BA /* BSnapViewController.swift */; };
+		AC60C5FA1EA9D5F4001E83BA /* BSnapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC60C5F91EA9D5F4001E83BA /* BSnapViewController.xib */; };
+		AC6472381EA5F77A00C3AD2D /* BTakeSnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6472371EA5F77A00C3AD2D /* BTakeSnapViewController.swift */; };
+		AC64723A1EA5F7FF00C3AD2D /* BTakeSnapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC6472391EA5F7FF00C3AD2D /* BTakeSnapViewController.xib */; };
 		ACF7BE7A1C8D8AD7003E8983 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7BE791C8D8AD7003E8983 /* AppDelegate.swift */; };
 		ACF7BE7C1C8D8AD7003E8983 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7BE7B1C8D8AD7003E8983 /* ViewController.swift */; };
 		ACF7BE7F1C8D8AD7003E8983 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACF7BE7D1C8D8AD7003E8983 /* Main.storyboard */; };
@@ -24,6 +35,17 @@
 		AC11A87F1D5B128400EBFDFD /* BTwitterHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTwitterHelper.h; sourceTree = "<group>"; };
 		AC11A8801D5B128400EBFDFD /* BTwitterHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTwitterHelper.m; sourceTree = "<group>"; };
 		AC11A8811D5B128400EBFDFD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AC60C5D71EA724F7001E83BA /* icn_60_snap@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icn_60_snap@3x.png"; sourceTree = "<group>"; };
+		AC60C5D91EA7262A001E83BA /* icn_30_snap@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icn_30_snap@3x.png"; sourceTree = "<group>"; };
+		AC60C5DB1EA754EA001E83BA /* BSnapHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BSnapHandler.swift; sourceTree = "<group>"; };
+		AC60C5DD1EA75501001E83BA /* BFirebaseQueueHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFirebaseQueueHandler.swift; sourceTree = "<group>"; };
+		AC60C5DF1EA75DAF001E83BA /* BSnap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BSnap.swift; sourceTree = "<group>"; };
+		AC60C5ED1EA893CF001E83BA /* BSnapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BSnapsViewController.swift; path = Snapchat/BSnapsViewController.swift; sourceTree = "<group>"; };
+		AC60C5EF1EA894D9001E83BA /* BSnapsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BSnapsViewController.xib; path = Snapchat/BSnapsViewController.xib; sourceTree = "<group>"; };
+		AC60C5F71EA9D5E6001E83BA /* BSnapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BSnapViewController.swift; path = Snapchat/BSnapViewController.swift; sourceTree = "<group>"; };
+		AC60C5F91EA9D5F4001E83BA /* BSnapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BSnapViewController.xib; sourceTree = "<group>"; };
+		AC6472371EA5F77A00C3AD2D /* BTakeSnapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BTakeSnapViewController.swift; path = Snapchat/BTakeSnapViewController.swift; sourceTree = "<group>"; };
+		AC6472391EA5F7FF00C3AD2D /* BTakeSnapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BTakeSnapViewController.xib; path = Snapchat/BTakeSnapViewController.xib; sourceTree = "<group>"; };
 		ACF7BE761C8D8AD7003E8983 /* ChatSDKSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatSDKSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF7BE791C8D8AD7003E8983 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACF7BE7B1C8D8AD7003E8983 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +68,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC60C5D61EA724F7001E83BA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AC60C5D91EA7262A001E83BA /* icn_30_snap@3x.png */,
+				AC60C5D71EA724F7001E83BA /* icn_60_snap@3x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AC6472311EA5F52B00C3AD2D /* Snapchat */ = {
+			isa = PBXGroup;
+			children = (
+				AC6472371EA5F77A00C3AD2D /* BTakeSnapViewController.swift */,
+				AC6472391EA5F7FF00C3AD2D /* BTakeSnapViewController.xib */,
+				AC60C5DB1EA754EA001E83BA /* BSnapHandler.swift */,
+				AC60C5DD1EA75501001E83BA /* BFirebaseQueueHandler.swift */,
+				AC60C5DF1EA75DAF001E83BA /* BSnap.swift */,
+				AC60C5ED1EA893CF001E83BA /* BSnapsViewController.swift */,
+				AC60C5EF1EA894D9001E83BA /* BSnapsViewController.xib */,
+				AC60C5F71EA9D5E6001E83BA /* BSnapViewController.swift */,
+				AC60C5F91EA9D5F4001E83BA /* BSnapViewController.xib */,
+			);
+			name = Snapchat;
+			sourceTree = "<group>";
+		};
 		ACF7BE6D1C8D8AD7003E8983 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +114,8 @@
 		ACF7BE781C8D8AD7003E8983 /* ChatSDKSwift */ = {
 			isa = PBXGroup;
 			children = (
+				AC60C5D61EA724F7001E83BA /* Resources */,
+				AC6472311EA5F52B00C3AD2D /* Snapchat */,
 				AC11A87F1D5B128400EBFDFD /* BTwitterHelper.h */,
 				AC11A8801D5B128400EBFDFD /* BTwitterHelper.m */,
 				AC11A8811D5B128400EBFDFD /* GoogleService-Info.plist */,
@@ -163,8 +212,13 @@
 			files = (
 				ACF7BE841C8D8AD7003E8983 /* LaunchScreen.storyboard in Resources */,
 				AC11A8831D5B128400EBFDFD /* GoogleService-Info.plist in Resources */,
+				AC60C5FA1EA9D5F4001E83BA /* BSnapViewController.xib in Resources */,
+				AC60C5DA1EA7262A001E83BA /* icn_30_snap@3x.png in Resources */,
+				AC60C5D81EA724F7001E83BA /* icn_60_snap@3x.png in Resources */,
+				AC64723A1EA5F7FF00C3AD2D /* BTakeSnapViewController.xib in Resources */,
 				ACF7BE811C8D8AD7003E8983 /* Assets.xcassets in Resources */,
 				ACF7BE7F1C8D8AD7003E8983 /* Main.storyboard in Resources */,
+				AC60C5F01EA894D9001E83BA /* BSnapsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,9 +277,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC60C5E01EA75DAF001E83BA /* BSnap.swift in Sources */,
 				AC11A8821D5B128400EBFDFD /* BTwitterHelper.m in Sources */,
 				ACF7BE7C1C8D8AD7003E8983 /* ViewController.swift in Sources */,
+				AC60C5EE1EA893CF001E83BA /* BSnapsViewController.swift in Sources */,
+				AC60C5DC1EA754EA001E83BA /* BSnapHandler.swift in Sources */,
 				ACF7BE7A1C8D8AD7003E8983 /* AppDelegate.swift in Sources */,
+				AC60C5F81EA9D5E6001E83BA /* BSnapViewController.swift in Sources */,
+				AC60C5DE1EA75501001E83BA /* BFirebaseQueueHandler.swift in Sources */,
+				AC6472381EA5F77A00C3AD2D /* BTakeSnapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +408,7 @@
 				DEVELOPMENT_TEAM = P7RPLLCMTA;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ChatSDKSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.deluge.ChatSDKSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -365,6 +426,7 @@
 				DEVELOPMENT_TEAM = P7RPLLCMTA;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ChatSDKSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.deluge.ChatSDKSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -49,11 +49,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //verifyViewController?.delegate = self
         //BNetworkManager.shared().a.auth().setChallenge(verifyViewController)
         
+        // Snapchat
+        let snapsViewController = BSnapsViewController.init(nibName: nil, bundle: nil)
+        _ = BSnapHandler.shared
+        BInterfaceManager.shared().a.addTabBarViewController(snapsViewController, at: 2)
+        
         let mainViewController = BAppTabBarController.init(nibName: nil, bundle: nil)
         BNetworkManager.shared().a.auth().setChallenge(BLoginViewController.init(nibName: nil, bundle: nil));
         
         self.window?.rootViewController = mainViewController;
         self.window?.makeKeyAndVisible();
+        
         
         
         // Override point for customization after application launch.
@@ -65,7 +71,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        let dict = [bLoginTypeKey: (bAccountTypeCustom), bLoginCustomToken: token] as [String : Any]
 //        
 //        let block = BNetworkManager.shared().a.auth().authenticate(with: dict).thenOnMain
-//        _ = block!({(user: Any) -> Any? in
+//        _ = block!({(user: Any?) -> Any? in
 //            if(user is PUser) {
 //                self.authenticationFinished(with: user as? PUser)
 //            }

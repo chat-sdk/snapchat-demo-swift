@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Enable Photos access to import photos from your library.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Enable Camera to take photos.</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -76,7 +80,7 @@
 			<key>root_path</key>
 			<string>snapchat</string>
 			<key>storage_path</key>
-			<string>gs://chat-sdk-v3.appspot.com</string>
+			<string>gs://chat-sdk-v4.appspot.com</string>
 		</dict>
 		<key>google</key>
 		<dict>

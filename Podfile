@@ -23,6 +23,7 @@ target 'ChatSDKSwift' do
   #pod "TwitterKit"
   #pod 'GoogleSignIn'
   #pod 'Google/SignIn'
+  pod 'TGCameraViewController'
   
   #pod "ChatSDKModules/Backendless", :path => "ChatSDKModules"
 	

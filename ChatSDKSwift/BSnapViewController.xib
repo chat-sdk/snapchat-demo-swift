@@ -1,16 +1,60 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BSnapViewController" customModule="ChatSDKSwift" customModuleProvider="target">
+            <connections>
+                <outlet property="activityView" destination="PhM-bb-skk" id="iCU-Ds-uG1"/>
+                <outlet property="imageView" destination="FgX-GK-P4s" id="jB3-he-H99"/>
+                <outlet property="label" destination="wXy-xb-RJA" id="gBu-CQ-izg"/>
+                <outlet property="view" destination="iN0-l3-epB" id="0Zt-ZI-FXD"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXy-xb-RJA">
+                    <rect key="frame" x="0.0" y="567" width="375" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="h4v-0I-Vl9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="35"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FgX-GK-P4s">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="567"/>
+                </imageView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="PhM-bb-skk">
+                    <rect key="frame" x="177" y="323" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="bUc-ph-fKb"/>
+                        <constraint firstAttribute="height" constant="20" id="rAZ-nN-Lb9"/>
+                    </constraints>
+                </activityIndicatorView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="FgX-GK-P4s" secondAttribute="trailing" id="57r-R4-MFr"/>
+                <constraint firstItem="PhM-bb-skk" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="A4K-A2-O0M"/>
+                <constraint firstAttribute="bottom" secondItem="wXy-xb-RJA" secondAttribute="bottom" id="IFU-6d-wWj"/>
+                <constraint firstItem="wXy-xb-RJA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="QPd-sR-ZfF"/>
+                <constraint firstItem="PhM-bb-skk" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="QTo-rt-7pz"/>
+                <constraint firstItem="wXy-xb-RJA" firstAttribute="top" secondItem="FgX-GK-P4s" secondAttribute="bottom" id="fqw-04-Eep"/>
+                <constraint firstItem="FgX-GK-P4s" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hMa-2y-yrK"/>
+                <constraint firstAttribute="trailing" secondItem="wXy-xb-RJA" secondAttribute="trailing" id="jDs-6n-5OC"/>
+                <constraint firstItem="FgX-GK-P4s" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="x0d-OI-5GI"/>
+            </constraints>
+            <point key="canvasLocation" x="25.5" y="52.5"/>
         </view>
     </objects>
 </document>
