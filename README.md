@@ -18,4 +18,4 @@ This repositiory includes the full source code for this tutorial so you can see 
 1. `part_1` The empty project with Chat SDK
  
 
-
+### Part 1 - 
